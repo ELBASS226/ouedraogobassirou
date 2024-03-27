@@ -1,0 +1,125 @@
+
+body{
+    background: url('fond.jpeg') no-repeat ;
+    background-size: cover;
+}
+
+.contenu{
+
+    color: aliceblue;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 50px;
+}
+
+.entete{
+    height: 50px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.portfolio{
+    background-color: #00FFFF;
+    margin-right: 10%;
+    width: 110px;
+    font-size: 20px;
+    color: black;
+    font-family: 'Oswald';
+    float: left;
+}
+
+
+ul{
+    list-style: none;
+    float: right;
+}
+
+
+li{
+    display: inline;
+    padding: 10px;   
+}
+
+
+a{
+    text-decoration: none;
+    color: #808080;;
+    height: 30px;
+    width: 40px;
+    padding: 2px, 2px, 2px, 2px;
+}
+a:hover{
+    background-color: #00FFFF;
+    color: black;
+
+    
+}
+
+.menu{
+    background-color: black;
+    margin-right: 10%;
+    width: 100%;
+    height: 50px;
+    margin-left: 120px;
+    margin-right: 0px;
+    font-size: 14px;
+    color: #808080;
+    font-family: 'Perpetua';
+}
+
+#photo{
+    width: 260px;
+    height: 300px;
+}
+
+.body{
+    display: flex;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 50px;
+}
+.photo{
+    width: 50%;
+    height: 300px;
+    float: left;
+}
+
+.contenu_droit{
+    width: 50%;
+    height: 300px;
+    float: right;
+}
+
+.nom{
+    font-size: 14px;
+}
+.titre {
+    color: #00FFFF;
+}
+
+.ligne{
+    background-color: white;
+    height: 0px;
+    border-top: 0.1px solid white;
+}
+.description{
+    color: #E6E6E6;
+}
+
+.footer{
+    width: 100%;
+    height: 100px;
+    display: block;
+}
+.contact{
+    position: absolute;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.copy{
+    
+}
+#copyright{
+    color: #00FFFF;
+}
