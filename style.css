@@ -1,5 +1,6 @@
 
 body{
+    background-color: black;
     background: url('fond.png') no-repeat center fixed;
     background-size: cover;
 }
