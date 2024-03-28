@@ -3,6 +3,7 @@ body{
     
     background: url('fond.png') no-repeat center fixed;
     background-size: cover;
+    background-color:black;
 }
 
 .contenu{
