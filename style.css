@@ -28,7 +28,7 @@ body{
 }
 
 .portfolio{
-    background-color: #00FFFF;
+    background-color: #000000;
     width: 15%;
     height: 40px;   
     margin-top: 10px;
@@ -39,7 +39,7 @@ body{
 .portfolio p{
     font-family: 'Oswald';
     font-size: 20px;
-    color: black;
+    color: white;
     display: block;
     text-align: center;
     margin-top: 5px;
