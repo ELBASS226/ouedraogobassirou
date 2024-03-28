@@ -1,92 +1,127 @@
 
 body{
-    background: url('fond.jpeg') no-repeat ;
+    
+    /*background: url('fond.png') no-repeat center fixed;*/
     background-size: cover;
+    background-color: black;
 }
 
 .contenu{
-
     color: aliceblue;
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .entete{
-    height: 50px;
+    background-color: rgba(100,100,100,0.8);
+    border: solid white 0px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
     width: 100%;
-    margin-bottom: 10px;
+    height: 60px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px, 10px, 10px, 10px;
 }
+
 .portfolio{
-    background-color: #00FFFF;
-    margin-right: 10%;
-    width: 110px;
-    font-size: 20px;
-    color: black;
-    font-family: 'Oswald';
-    float: left;
+    width: 100%;
+
 }
-
-
-ul{
-    list-style: none;
+.portfolio p{
+    background-color: black;
+    width: 15%;
+    height: 40px;
+    font-family: 'Oswald';
+    font-size: 20px;
+    display: inline-block;
+    color: white;
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    border-radius: 8px;
+    margin-left: 10px;
+    min-width: 120px;
+}
+.menu{
+    width: 80%;
+    margin-right: 0px;
     float: right;
 }
 
 
+ul{
+    width: 100%;
+    list-style: none;
+    float: right;
+    padding: 5px;
+}
+
+
 li{
-    display: inline;
-    padding: 10px;   
+    display: inline-block;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 0px;
 }
 
 
 a{
     text-decoration: none;
-    color: #808080;;
-    height: 30px;
-    width: 40px;
-    padding: 2px, 2px, 2px, 2px;
+    color: #808080;
+    padding: 6px;
+    border-radius: 5px;
 }
 a:hover{
     background-color: #00FFFF;
-    color: black;
-
-    
+    color: black;   
 }
 
 .menu{
-    background-color: black;
-    margin-right: 10%;
-    width: 100%;
     height: 50px;
-    margin-left: 120px;
-    margin-right: 0px;
     font-size: 14px;
     color: #808080;
     font-family: 'Perpetua';
 }
 
 #photo{
-    width: 260px;
-    height: 300px;
+    width: 200px;
+    height: 220px;
+    margin-left: 30%;
+    margin-top: 30px;
 }
 
 .body{
+    background-color: rgba(128,128,128,0.2);
+    border: solid white 0px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
     display: flex;
-    margin-left: 20%;
-    margin-right: 20%;
-    padding-top: 50px;
+    flex-wrap: wrap;
+    padding-top: 30px;
 }
-.photo{
-    width: 50%;
+.col-gauche{
+    width: 30%;
     height: 300px;
-    float: left;
 }
 
-.contenu_droit{
-    width: 50%;
+.col-droit{
+    width: 70%;
     height: 300px;
+}
+
+.col-droit{
     float: right;
+}
+.nom, .titre, .ligne, .description{
+    width: 80%;
 }
 
 .nom{
@@ -103,23 +138,164 @@ a:hover{
 }
 .description{
     color: #E6E6E6;
+    border-left: solid 1px turquoise;
+    display: inline-block;
+    text-align: left;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
-.footer{
-    width: 100%;
-    height: 100px;
-    display: block;
+.footer P{
+    display: inline-block;
+    margin-left: 20px;
 }
+
+#tel, #mail{
+    color: #D9E021;
+    font-size: 12px;
+    font-family: 'Oswald';
+}
+
+.footer p em{
+    color: white;
+    font-size: 14px;
+    font-family: 'Oswald';
+}
+
 .contact{
-    position: absolute;
-    width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
+    background-color: rgba(128,128,128,0.2);
+    border: solid white 0px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+    height: 80px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact p{
+    display: inline-block;
+    text-align: center;
+    margin-left: 35%;
 }
 
-.copy{
-    
-}
-#copyright{
+.copy p{
     color: #00FFFF;
+    font-family: 'Oswald';
+    font-size: 11px;
+    display: inline-block;
+    text-align: center;
+}
+
+  .contact:hover {
+    box-shadow: 0 5px 8px 0 rgba(200,200,200,0.4);
+  }
+
+
+.description:hover{
+    font-size: 18px;
+}
+
+/*Adapte l'écran responsive*/
+@media screen and (max-width:768px){
+    .contenu{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .portfolio{
+        min-width: 150px;
+        margin-left: 30%;
+        margin-right: 30%;
+        padding: 0;
+    }
+    .entete{
+        height: 120px;
+    }
+
+    ul{
+        float: left;
+        padding: 0px;
+    }
+    li{
+        margin-left: 5px;
+
+        padding: 0px;
+
+    }
+    a{
+        padding: 2px;
+    }
+
+    .menu{
+        padding: 0px;
+        width: 100%;
+    }
+    .col-gauche{
+        width: 100%;
+        order: 1;
+        height: 150px;
+        
+    }
+
+    .col-droit{
+        width: 80%;
+        order: 2;
+        margin-left: 5%;
+        margin-right: 5%;
+        height: max-content;
+    }
+    .nom, .titre, .ligne, .description{
+        width: 80%;
+        text-align: center;
+    }
+    #photo{
+        margin-left: 30%;
+        width: 100px;
+        height: 120px;
+    }
+
+    .nom, .titre, .ligne, .description{
+        width: 100%;
+    }
+
+    .description{
+        color: #E6E6E6;
+        border-left: solid .5px turquoise;
+        display: inline-block;
+        text-align: left;
+        margin-top: 10px;
+        padding-left: 10px;
+        margin-bottom: 20px;
+    }
+    .description :hover{
+        font-size: x-large;
+    }
+    .description:first-letter{
+        font-size: 30px;
+    }
+    .body{
+        padding: 0px;
+        height:max-content;
+    }
+    .copy p{
+        min-width: 200px;
+        display: inline-block;
+        text-align: center;
+        padding: 0px;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .contact{
+        width: 100%;
+        height: max-content;
+    }
+    .contact p{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
 }
